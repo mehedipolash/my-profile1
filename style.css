@@ -76,6 +76,7 @@ p {
   border-radius: 10px;
   margin: 7px;
   padding: 10px;
+  text-decoration: none; /* Ensure no text decoration */
 }
 
 .navbar-menu a:hover {
@@ -512,34 +513,52 @@ textarea {
 @media screen and (max-width: 576px) {
   .about-me {
     width: 100%;
+    padding: 1% 5%; /* Adjust padding for small screens */
   }
 
-  .projects-container {
-    grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
-    width: auto;
-    height: auto;
+  .aboutme-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .aboutme-img {
+    margin-top: 20px; /* Add some spacing */
+  }
+
+  .aboutme-img img {
+    width: 150px; /* Reduce image size for small screens */
+    height: 170px;
+  }
+
+  .aboutme-desc {
+    text-align: center; /* Center align text */
+    padding-left: 0; /* Remove left padding */
+    width: 100%; /* Ensure text takes full width */
+  }
+
+  .aboutme-desc p {
+    text-align: center; /* Center align paragraphs */
+    margin: 10px 0; /* Add spacing between paragraphs */
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  .aboutme-desc hr {
+    margin: 10px auto; /* Center align horizontal lines */
+  }
+
+  .about-me .cv-button {
+    width: 100%; /* Make buttons full width */
+    margin: 5px 0; /* Add spacing between buttons */
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 10px; /* Adjust button padding */
   }
 
   .atitle {
-    color: navy;
+    color: navy; /* Ensure .atitle color is applied */
   }
 
-  .abc {
-    color: #165348;
-  }
-
-  /* Fix for .navbar-menu color on small screens */
-  .navbar-menu {
-    margin-top: 5px;
-    color: red !important; /* Ensure the text color is red */
-  }
-
-  /* Ensure links inside .navbar-menu are red */
   .navbar-menu a {
-    color: tan !important;
-    font-style: italic;
-    font-weight: bold;
-    font-family: sans-serif;
-    text-decoration: underline;
+    text-decoration: overline;
+    color: tomato; /* Ensure no text decoration in navbar */
   }
 }
