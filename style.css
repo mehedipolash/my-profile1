@@ -509,6 +509,11 @@ textarea {
 }
 /* Footer ends here */
 
+
+.abc{
+    color: black; 
+    text-shadow: 2px 2px 5px rgba(52, 152, 219, 0.5);
+}
 /* Media queries */
 @media screen and (max-width: 576px) {
   .about-me {
@@ -554,11 +559,18 @@ textarea {
   }
 
   .atitle {
-    color: navy; /* Ensure .atitle color is applied */
+    color: yellowgreen; /* Ensure .atitle color is applied */
+    text-shadow: 2px 2px 5px rgba(0, 0, 6, 0.5);;
+    text-decoration-line: overline;
   }
 
   .navbar-menu a {
     text-decoration: overline;
     color: tomato; /* Ensure no text decoration in navbar */
   }
+  .profile>img{
+    display:none;
+  }
+
+
 }
